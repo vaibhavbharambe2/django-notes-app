@@ -28,7 +28,7 @@ pipeline{
         }
         stage("Depoly"){
             steps{
-                echo "Deploying the code"
+                echo "Deploying the code and executing application"
                 sh "docker compose down && docker compose up -d"
             }
         }
